@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/passReset.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form class="signin-form" method="post" onsubmit="resetPassword(event)">
+            <h2>Reset Password</h2>
+            <p>Please enter your new password and confirm the reset by clicking the button below.</p>
+            <input type="password" placeholder="New Password" required id="newPassword">
+            <input type="hidden" id="uuid" value="YOUR_UUID_HERE">
+            <button type="submit">Reset Password</button>
+            <p>Remember your password? <a href="/">Sign in</a></p>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/JS/resetpass.js"></script>
+</body>
+</html>

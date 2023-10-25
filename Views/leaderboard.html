@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    
+
+  <link rel="stylesheet" href="/CSS/leaderboard.css">  
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <nav>
+                <div id="paradiv"></div>
+                <div id="showLeaderDiv"><a ><button id="LB" >Show Leader Board</button></a></div>
+                
+                <ul>
+                    <li><a href="/expense"><button >Home</button></a></li>
+                    
+                    <li id="logout"><a href="#"><button>Log Out</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="leaderboard">
+            <h1>Leader Board</h1>
+            <table>
+                <thead>
+                    <tr >
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Total Expense</th>
+                    </tr>
+                </thead>
+                <tbody id="m" >
+                   
+                 
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/JS/Leaderboard.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense Tracker - Sign In</title>
+    <link rel="stylesheet" href="/CSS/signin.css">
+</head>
+<body>
+    <div class="container">
+        <form class="signin-form" method="post" onsubmit="submitSignIn(event)">
+            <h2>Expense Tracker Sign In</h2>
+            <input type="email" placeholder="Email" required id="email">
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit">Sign In</button>
+            <p>New user? <a href="/user">Sign up</a></p>
+            <p>Forgot your password? <a href="/forgotpass">Click here</a></p>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/JS/signin.js"></script>
+</body>
+</html>

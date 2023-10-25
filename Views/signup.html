@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Sign Up</title>
+    <link rel="stylesheet" href="/CSS/signup.css">
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form" method="post" action="/signup" onsubmit="SubmitSignUp(event)">
+            <h2>Expense Tracker Sign Up</h2>
+            <input type="text" placeholder="Name" required name="name" id="name">
+            <input type="email" placeholder="Email" required name="email" id="email">
+            <input type="password" placeholder="Password" required name="password" id="password">
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="/">Already registered? Log in</a>
+    </div>
+    <script src="/JS/signup.js"></script>
+</body>
+</html>
